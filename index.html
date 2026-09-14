@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShikshaAI - Learn Smarter with AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>📚 ShikshaAI</h1>
+        <p>Learn Smarter with AI</p>
+    </header>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+
+            <h2>What do you want to learn?</h2>
+
+            <!-- LANGUAGE -->
+            <div class="language-box">
+
+                <label for="languageSelect">
+                    🌐 Choose Language
+                </label>
+
+                <select id="languageSelect">
+                    <option value="English">🇬🇧 English</option>
+                    <option value="Hindi">🇮🇳 Hindi</option>
+                </select>
+
+            </div>
+
+
+            <!-- TOPIC INPUT -->
+            <input
+                type="text"
+                id="topicInput"
+                placeholder="Enter a topic e.g. Photosynthesis"
+            >
+
+
+            <!-- EXPLAIN BUTTON -->
+            <button onclick="explainTopic()">
+                ✨ Explain Topic
+            </button>
+
+        </section>
+
+
+        <!-- AI EXPLANATION -->
+        <section id="result" class="result">
+
+            <h2>🤖 AI Explanation</h2>
+
+            <div id="explanation">
+                Your explanation will appear here.
+            </div>
+
+
+            <!-- QUIZ BUTTON -->
+            <button onclick="generateQuiz()">
+                🧠 Generate Quiz
+            </button>
+
+        </section>
+
+
+        <!-- QUIZ -->
+        <section id="quiz" class="quiz">
+
+            <h2>🧠 Test Your Knowledge</h2>
+
+            <div id="quizContainer">
+                Quiz questions will appear here.
+            </div>
+
+
+            <!-- SUBMIT -->
+            <button onclick="checkAnswers()">
+                🏆 Submit Quiz
+            </button>
+
+
+            <!-- SCORE -->
+            <div id="score"></div>
+
+        </section>
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
